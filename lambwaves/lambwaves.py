@@ -183,12 +183,12 @@ class Lamb:
         
         # Solve the dispersion equations.
         
-        sym = self._solve_disp_eqn(function=self._symmetric, 
+        sym = self._solve_disp_eqn(function=self._symétrique, 
                                    nmodes=nmodes_sym, 
                                    c=c_S, 
                                    label='S')
         
-        antisym = self._solve_disp_eqn(function=self._antisymmetric, 
+        antisym = self._solve_disp_eqn(function=self._antisymétrique, 
                                        nmodes=nmodes_antisym, 
                                        c=c_L, 
                                        label='A')
