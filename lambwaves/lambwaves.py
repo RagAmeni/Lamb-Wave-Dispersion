@@ -609,7 +609,7 @@ class Lamb:
         ax.set_xlim([0, self.fd_max])
         ax.set_ylim([0, y_max])
         
-        ax.set_xlabel('Frequency × thickness [KHz × mm]')
+        ax.set_xlabel('Frequence × 2h [KHz × mm]')
         
     def plot_phase_velocity(self, modes='both', cutoff_frequencies=True, 
                             material_velocities=True, save_img=False,
@@ -669,7 +669,7 @@ class Lamb:
                             'or "both".') 
             
         ax.legend(loc='lower right')
-        ax.set_ylabel('Phase Velocity [m/s]')
+        ax.set_ylabel('vitesse de phase [m/s]')
         
         if save_img:
             fig.savefig(f'results/Phase Velocity - {self.d*1e3} mm '
@@ -732,7 +732,7 @@ class Lamb:
                             'or "both".')  
              
         ax.legend(loc='lower right')
-        ax.set_ylabel('Group Velocity [m/s]')
+        ax.set_ylabel('vitesse de groupe [m/s]')
         
         if save_img:
             fig.savefig(f'results/Group Velocity - {self.d*1e3} mm '
